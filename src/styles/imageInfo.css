@@ -1,0 +1,124 @@
+
+.imageInfo {
+	background: url(@/assets/imageInfo-bg-img.svg) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.imageInfo::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: black;
+	opacity: 0.5;
+	z-index: 1;
+}
+.imageInfo__content {
+	position: relative;
+	z-index: 2;
+}
+.imageInfo__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 46px;
+	margin-bottom: -46px;
+}
+.imageInfo__header-info {
+	display: flex;
+	align-items: center;
+}
+.user-avatar {
+	width: 55px;
+	height: 55px;
+	overflow: hidden;
+	border-radius: 8px;
+	margin-right: 10px;
+}
+.user-avatar img{ 
+	width: 100%;
+	object-fit: cover;
+}
+.user-name,
+.user-instagram {
+	margin: 0;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 28px;
+	color: #F2F2F2;
+}
+.user-instagram {
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+.imageInfo__header-nav {
+	display: flex;
+	align-items: center;
+}
+.btn-favorite {
+	background: #FFFFFF url(@/assets/icon/btn-favorite-icon.svg) no-repeat center;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	width: 49px;
+	height: 49px;
+	border: none;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.btn-download {
+	background: #FFF200 url(@/assets/icon/btn-download-icon.svg) no-repeat 15% center;
+	border: none;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	height: 49px;
+	padding-left: 65px;
+	padding-right: 23px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	color: #000000;
+	cursor: pointer;
+}
+.imageView {
+	position: relative;
+	top: 110px;
+	border-radius: 8px;
+	overflow: hidden;
+	height: 744px;
+}
+.imageView img{
+	width: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 600px) { 
+	.imageInfo,
+	.imageInfo::after {
+		background: none;
+	}
+	.user-name,
+	.user-instagram {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: #000000;
+	}
+	.user-instagram {
+		font-size: 16px;
+		font-weight: 300;
+		margin-top: 5px;
+		color: #BDBDBD;
+	}
+	.btn-download {
+		width: 49px;
+		height: 49px;
+		padding: 0;
+		background-position: center;
+	}
+	.imageView {
+		height: 227px;
+	}
+}

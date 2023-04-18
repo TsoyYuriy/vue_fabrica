@@ -1,0 +1,36 @@
+.nav {
+	background: #000000;
+	font-size: 20px;
+	line-height: 23px;
+	color: #FFFFFF;
+	padding: 37px 0;
+}
+.nav__inner {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.menu {
+	margin-left: auto;
+	display: flex;
+	gap: 38px;
+	align-items: center;
+}
+.favorite {
+	background: url(@/assets/icon/favorite-icon.svg) no-repeat left;
+}
+.favorite a {
+	padding-left: 33px;
+}
+.search-icon {
+	background: url(@/assets/icon/search-icon.svg) no-repeat left;
+}
+.search-icon a {
+	padding-left: 33px;
+}
+
+@media screen and (max-width: 600px) {
+	.menu {
+		gap: 21px;
+	}
+}

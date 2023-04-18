@@ -1,0 +1,27 @@
+
+.search-block {
+	background: url(@/assets/search-bg-img.svg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	padding: 92px 0;
+	margin-bottom: 107px;
+}
+.input-search {
+	border: none;
+	width: 50%;
+	padding: 21px 30px;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 25px;
+	color: #000000;
+}
+.input-search::placeholder {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 25px;
+	color: #000000;
+}
+.load {
+	text-align: center;
+}
